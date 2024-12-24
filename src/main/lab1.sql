@@ -1,0 +1,20 @@
+-- The WHERE clause may be used following a SELECT statement to filter for records
+--  matching some specified condition.
+-- For instance, the "Employee" table below:
+--      |  id  |   first_name   |   last_name   |  salary  |
+--      ----------------------------------------------------
+--      |1     |'Steve'         |'Garcia'       |67400.00  |
+--      |2     |'Alexa'         |'Smith'        |42500.00  |
+--      |3     |'Steve'         |'Jones'        |99890.99  |
+--      |4     |'Brandon'       |'Smith'        |120000.00 |
+--      |5     |'Adam'          |'Jones'        |55050.50  |
+-- Let's say we wanted to query all the records from the table that have the first name "Steve".
+-- The statement will have a WHERE clause as follows:
+--      SELECT * FROM employee WHERE first_name = 'Steve';
+-- This statement would have returned the following result set:
+--      |  id  |   first_name   |   last_name   |  salary  |
+--      ----------------------------------------------------
+--      |1     |'Steve'         |'Garcia'       |67400.00  |
+--      |3     |'Steve'         |'Jones'        |99890.99  |
+-- TODO: Given the Employee table, write a query below that will query for
+--  employees with the last_name 'Smith'.

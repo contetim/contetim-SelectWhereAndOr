@@ -1,0 +1,12 @@
+-- Next, we'll be applying some comparative expressions to a WHERE clause with
+-- multiple parts.
+-- |  id  |   first_name   |   last_name   |  salary  |
+-- |------|----------------|---------------|----------|
+-- |1     |'Steve'         |'Garcia'       |67400.00  |
+-- |2     |'Alexa'         |'Smith'        |42500.00  |
+-- |3     |'Steve'         |'Jones'        |99890.99  |
+-- |4     |'Brandon'       |'Smith'        |120000    |
+-- |5     |'Adam'          |'Jones'        |55050.50  |
+-- |6     |'Steve'         |'Brown'        |90000.50  |
+-- TODO: Query the above employee table for all employees with a salary of over 50000
+--  who are NOT named 'Steve'

@@ -1,0 +1,22 @@
+-- A WHERE clause may filter for more than just equality.
+-- Naturally, all comparators apply to WHERE statements, including >, <, =, !=, >=, <=.
+-- != may also be written as <>.
+--  For example, a SQL statement that retrieves all salaries of 40000 and below:
+--      SELECT * FROM employee where salary <= 40000
+-- In order to check for equality to one of multiple items, you may also use the phrase
+--      column IN ('value1', 'value2')
+-- likewise, NOT IN will check if the none of the values match.
+-- We can filter strings that match partially using LIKE and a '%' wildcard.
+-- For example, this will return all records where the first name starts with 'S':
+--      SELECT * FROM employee WHERE first_name LIKE 'S%';
+-- Finally, 'null' values are not compared with != / <> or =. For nulls, you should
+--  use IS NULL or IS NOT NULL.
+--      |  id  |   first_name   |   last_name   |  salary  |
+--      ----------------------------------------------------
+--      |1     |'Steve'         |'Garcia'       |75000.00  |
+--      |2     |'Alexa'         |'Smith'        |42500.00  |
+--      |3     |'Steve'         |'Jones'        |99890.99  |
+--      |4     |'Brandon'       |'Smith'        |120000.00 |
+--      |5     |'Adam'          |'Jones'        |55050.50  |
+-- TODO: Given the above "Employee" table, create a query that retrieves all records
+--  with a salary over 75000.

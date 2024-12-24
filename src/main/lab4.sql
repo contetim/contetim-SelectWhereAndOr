@@ -1,0 +1,14 @@
+-- AND and OR clauses naturally follow binary logic, as with && / || in other
+--  languages. Meaning: for an AND operation, both evaluations must be true, for
+--  OR operations, one must be true. The keyword NOT also functions like a
+--  ! operator, where the result of the expression is flipped.
+-- |  id  |   first_name   |   last_name   |  salary  |
+-- |------|----------------|---------------|----------|
+-- |1     |'Steve'         |'Garcia'       |67400.00  |
+-- |2     |'Alexa'         |'Smith'        |42500.00  |
+-- |3     |'Steve'         |'Jones'        |99890.99  |
+-- |4     |'Brandon'       |'Smith'        |120000    |
+-- |5     |'Adam'          |'Jones'        |55050.50  |
+-- |6     |'Steve'         |'Brown'        |90000.50  |
+-- TODO: Write a SQL statement that will query the above 'employee' table for
+--  all employees that earn less than 50000 or more than 100000.

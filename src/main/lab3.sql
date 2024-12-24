@@ -1,0 +1,18 @@
+-- AND and OR clauses as part of a WHERE clause can be used to combine
+-- multiple conditions. For instance, the command
+--      SELECT * FROM employee WHERE last_name = 'Jones' OR first_name = 'Steve';
+-- will select all employees that have first_name 'Steve' and last_name Jones.
+-- Here are some more examples of these clauses:
+--      SELECT * FROM table WHERE condition1 = value1 AND condition2 = value2;
+--      SELECT * FROM table WHERE something > 500 OR something < 100;
+-- Now, consider the Employee table.
+-- |  id  |   first_name   |   last_name   |  salary  |
+-- |------|----------------|---------------|----------|
+-- |1     |'Steve'         |'Garcia'       |67400.00  |
+-- |2     |'Alexa'         |'Smith'        |42500.00  |
+-- |3     |'Steve'         |'Jones'        |99890.99  |
+-- |4     |'Brandon'       |'Smith'        |120000    |
+-- |5     |'Adam'          |'Jones'        |55050.50  |
+-- |6     |'Steve'         |'Brown'        |90000.50  |
+-- TODO: Write a statement that will query the above table for all employees named
+--  'Steve' who earn more than $75,000.
